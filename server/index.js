@@ -8,6 +8,8 @@ const port=4500 || process.env.PORT
 
 const server=http.createServer(app);
 
+app.use(cors());
+
 app.get('/',(req,res)=>{
     res.send("Working");
 })
